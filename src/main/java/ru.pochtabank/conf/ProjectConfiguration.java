@@ -2,12 +2,11 @@ package ru.pochtabank.conf;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
-import ru.pochtabank.process.BankSendingProcess;
+import ru.pochtabank.exchange.RegistrySender;
 import ru.pochtabank.service.FileService;
 
 import java.io.IOException;
@@ -18,7 +17,6 @@ import java.util.Properties;
 public class ProjectConfiguration {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProjectConfiguration.class.getName());
     private String registryFolder;
-
     public void init() {
         Properties properties = new Properties();
         try {
@@ -37,8 +35,20 @@ public class ProjectConfiguration {
         return new RestTemplate();
     }
 
+    //todo host
+    @Bean
+    public String host() {
+        return "localhost:8080";
+    }
+
     @Bean
     public FileService fileService() {
         return new FileService(registryFolder);
+    }
+
+    @Bean
+    @Autowired
+    public RegistrySender registrySender(RestTemplate restTemplate, String host) {
+        return new RegistrySender(restTemplate, host);
     }
 }

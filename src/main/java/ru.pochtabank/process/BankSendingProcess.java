@@ -2,22 +2,35 @@ package ru.pochtabank.process;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
+import ru.pochtabank.exchange.RegistrySender;
+import ru.pochtabank.service.DocumentParser;
+import ru.pochtabank.service.FileService;
+import ru.pochtabank.service.ModelConverter;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 
 @Component
 public class BankSendingProcess {
-    private final RestTemplate restTemplate;
+    private final FileService fileService;
+    private final RegistrySender registrySender;
 
     @Autowired
-    public BankSendingProcess(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    public BankSendingProcess(FileService fileService, RegistrySender registrySender) {
+        this.fileService = fileService;
+        this.registrySender = registrySender;
     }
 
-    public RestTemplate getRestTemplate() {
-        return restTemplate;
-    }
-
-    public void sendRegistryToBank() {
-
+    public void sendRegistryToBank() throws FileNotFoundException {
+        var files = fileService.getClientRegistryFiles();
+        for (File file : files) {
+            var clientRegistries = DocumentParser.parseDbfFile(file);
+            var bankRegistries = ModelConverter.convertFromClientToBank(clientRegistries);
+            //todo
+            var stream = DocumentParser.saveBankRegister(bankRegistries, new File(fileService.getRegistryFolder()+"/bank"));
+            for (byte[] bytes : stream) {
+                registrySender.sendRegistryToBank(bytes);
+            }
+        }
     }
 }
