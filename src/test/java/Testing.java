@@ -11,12 +11,12 @@ class Testing {
     @Test
     void testDateRegExp() {
         String s1 = "0312";
-        assertTrue(s1.matches("^[0-9]*${4}"));
+        assertTrue(s1.matches("^[0-9]{4}$"));
         String s2 = "312";
-        assertFalse(s2.matches("^[0-9]*${4}"));
+        assertFalse(s2.matches("^[0-9]{4}$"));
         String s3 = "a312";
-        assertFalse(s3.matches("^[0-9]*${4}"));
+        assertFalse(s3.matches("^[0-9]{4}$"));
         String s4 = "21312";
-        assertFalse(s4.matches("^[0-9]*${4}"));
+        assertFalse(s4.matches("^[0-9] {4}$"));
     }
 }

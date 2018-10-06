@@ -1,4 +1,4 @@
-# Created by .ignore support plugin (hsz.mobi)
+apleodelva@gmail.com# Created by .ignore support plugin (hsz.mobi)
 ### Java template
 # Compiled class file
 *.class
@@ -88,3 +88,4 @@ fabric.properties
 target/generated-sources/
 target/generated-test-sources/
 target/test-classes/
+/src/main/resources/mail.properties

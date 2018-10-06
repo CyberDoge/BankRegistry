@@ -1,0 +1,11 @@
+ru/pochtabank/conf/MailConfiguration.class
+ru/pochtabank/model/BankRegistry.class
+ru/pochtabank/service/FileService.class
+ru/pochtabank/exchange/RegistrySender.class
+ru/pochtabank/process/BankSendingProcess.class
+ru/pochtabank/service/ModelConverter.class
+ru/pochtabank/model/ClientRegistry.class
+ru/pochtabank/service/EmailService.class
+ru/pochtabank/conf/ProjectConfiguration.class
+ru/pochtabank/Application.class
+ru/pochtabank/service/DocumentParser.class

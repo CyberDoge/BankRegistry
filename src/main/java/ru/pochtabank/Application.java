@@ -5,7 +5,6 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.Bean;
-import ru.pochtabank.conf.ProjectConfiguration;
 import ru.pochtabank.process.BankSendingProcess;
 
 
@@ -13,8 +12,6 @@ import ru.pochtabank.process.BankSendingProcess;
 public class Application {
 
     public static void main(String[] args) {
-        ProjectConfiguration projectConfiguration = new ProjectConfiguration();
-        projectConfiguration.init();
         new SpringApplicationBuilder(Application.class).web(WebApplicationType.NONE).run(args);
     }
 

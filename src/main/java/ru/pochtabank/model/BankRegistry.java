@@ -29,7 +29,7 @@ public class BankRegistry {
     }
 
     public void setPaymentPeriod(String paymentPeriod) {
-        if (!paymentPeriod.matches("^[0-9]*${4}"))
+        if (!paymentPeriod.matches("^[0-9]{4}$"))
             throw new IllegalArgumentException("Bad payment period format. Must be MMYY");
         this.paymentPeriod = paymentPeriod;
     }

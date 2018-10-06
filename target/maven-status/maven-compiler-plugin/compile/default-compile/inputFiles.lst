@@ -1,0 +1,11 @@
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/service/EmailService.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/model/ClientRegistry.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/process/BankSendingProcess.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/service/FileService.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/Application.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/service/ModelConverter.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/conf/ProjectConfiguration.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/service/DocumentParser.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/conf/MailConfiguration.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/model/BankRegistry.java
+/home/cyberdoge/Projects/BankRegistry/src/main/java/ru/pochtabank/exchange/RegistrySender.java
