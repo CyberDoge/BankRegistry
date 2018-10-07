@@ -6,8 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 @Service
 public class FileService {
@@ -52,7 +56,7 @@ public class FileService {
     }
 
     public void sendErrorMoveFile(File file) {
-        var errorPath = new File(registrySendFolder.getAbsolutePath() + File.separatorChar + "SendError"
+        var errorPath = new File(statusFolder.getAbsolutePath() + File.separatorChar + "SendError"
                 + File.separatorChar + file.getName());
         errorPath.getParentFile().mkdirs();
         file.renameTo(errorPath);
@@ -60,10 +64,23 @@ public class FileService {
 
 
     public void errorMoveFile(File file) {
-        var errorPath = new File(registrySendFolder.getAbsolutePath() + File.separatorChar + "Send" + File.separatorChar + "Error"
+        var errorPath = new File(statusFolder.getAbsolutePath() + File.separatorChar + "Send" + File.separatorChar + "Error"
                 + File.separatorChar + file.getName());
         errorPath.getParentFile().mkdirs();
         file.renameTo(errorPath);
+    }
+
+    public File createZipFile(File file) {
+        File zipF = new File(file.getPath() + ".zip");
+        try (var zos = new ZipOutputStream(new FileOutputStream(zipF))) {
+            ZipEntry entry = new ZipEntry(file.getName());
+            zos.putNextEntry(entry);
+            zos.closeEntry();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+        return zipF;
+
     }
 
     public File[] getClientRegistryFiles() {

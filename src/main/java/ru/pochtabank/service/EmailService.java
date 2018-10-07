@@ -1,11 +1,14 @@
 package ru.pochtabank.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.SimpleMailMessage;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import javax.mail.MessagingException;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
@@ -14,22 +17,20 @@ import java.util.HashMap;
 
 @Service
 public class EmailService {
-    private JavaMailSender mailSender;
+    private final JavaMailSender mailSender;
+    private final MimeMessageHelper messageHelper;
 
     @Autowired
-    public EmailService(JavaMailSender mailSender) {
+    public EmailService(JavaMailSender mailSender, MimeMessageHelper messageHelper) {
         this.mailSender = mailSender;
+        this.messageHelper = messageHelper;
     }
+
     @Async
-    public void sendError(SimpleMailMessage email, File file, String errorMessage) throws IOException {
-        URI uri = URI.create("jar:file:/error_file.zip");
-        var env = new HashMap<String, String>();
-        env.put("create", "true");
-        System.out.println(uri);
-        try (FileSystem zipf = FileSystems.newFileSystem(uri, env)) {
-            Path pathInZipFile = zipf.getPath(File.separator + file.getName());
-            Files.copy(file.toPath(), pathInZipFile, StandardCopyOption.REPLACE_EXISTING);
-        }
-        mailSender.send(email);
+    public void sendError(String errorMessage, File zip) throws MessagingException {
+        messageHelper.addAttachment("registry", zip);
+        messageHelper.setText(errorMessage);
+        mailSender.send(messageHelper.getMimeMessage());
+        zip.delete();
     }
 }

@@ -1,4 +1,3 @@
-apleodelva@gmail.com# Created by .ignore support plugin (hsz.mobi)
 ### Java template
 # Compiled class file
 *.class
@@ -89,3 +88,4 @@ target/generated-sources/
 target/generated-test-sources/
 target/test-classes/
 /src/main/resources/mail.properties
+src/main/java/ru/pochtabank/dao/
