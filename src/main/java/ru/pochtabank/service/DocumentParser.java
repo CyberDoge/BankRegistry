@@ -7,11 +7,7 @@ import ru.pochtabank.model.ClientRegistry;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class DocumentParser {
     public static List<ClientRegistry> parseDbfFile(File dbf) throws FileNotFoundException {
@@ -27,27 +23,28 @@ public class DocumentParser {
         return new String(DbfUtils.trimLeftSpaces((byte[]) row));
     }
 
-    public static List<String> saveBankRegister(List<BankRegistry> bankRegistries, File bankSaveParentRoot) {
-        var result = new ArrayList<String>(bankRegistries.size());
+    public static String saveBankRegister(List<BankRegistry> bankRegistries) {
+//        var result = new ArrayList<String>(bankRegistries.size());
+        var line = new StringBuilder();
         bankRegistries.forEach(registry -> {
-            var line = new StringBuilder(registry.getPersonalAccount()).append(';')
-                    .append(registry.getPaymentPeriod()).append(';').append(registry.getChargesAmount());
+            line.append(registry.getPersonalAccount()).append(';')
+                    .append(registry.getPaymentPeriod()).append(';').append(registry.getChargesAmount()).append('\n');
             //todo ask normal name and creating folder
-            var fileName = bankSaveParentRoot + "/" + UUID.randomUUID();
-            var file = new File(fileName);
-            file.getParentFile().mkdirs();
-            try {
-                file.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            try (var streamWriter = new FileOutputStream(file)) {
-                streamWriter.write(line.toString().getBytes());
-                result.add(fileName);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+//            var fileName = bankSaveParentRoot + "/" + UUID.randomUUID();
+//            var file = new File(fileName);
+//            file.getParentFile().mkdirs();
+//            try {
+//                file.createNewFile();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            try (var streamWriter = new FileOutputStream(file)) {
+//                streamWriter.write(line.toString().getBytes());
+//                result.add(fileName);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
         });
-        return result;
+        return line.toString();
     }
 }

@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 @Service
 public class FileService {
@@ -25,13 +23,13 @@ public class FileService {
 
         //if value empty registries will be store in OS home folder
         if (registrySendFolder == null || registrySendFolder.isEmpty()) {
-            registrySendFolder = System.getProperty("user.home") + File.pathSeparator + "registries";
+            registrySendFolder = System.getProperty("user.home") + File.separatorChar + "registries";
         }
         if (registryGetFolder == null || registryGetFolder.isEmpty()) {
-            registryGetFolder = System.getProperty("user.home") + File.pathSeparator + "received";
+            registryGetFolder = System.getProperty("user.home") + File.separatorChar + "received";
         }
         if (statusFolder == null || statusFolder.isEmpty()) {
-            statusFolder = System.getProperty("user.home") + File.pathSeparator + "status";
+            statusFolder = System.getProperty("user.home") + File.separatorChar + "status";
         }
         this.registryGetFolder = new File(registryGetFolder);
         this.statusFolder = new File(statusFolder);
@@ -46,29 +44,29 @@ public class FileService {
         return registrySendFolder;
     }
 
-    public void successMoveFile(String pathStr) throws IOException {
-        var path = Paths.get(pathStr);
-        var successPath = Paths.get(registrySendFolder.getAbsolutePath() + File.pathSeparator + "Send" + File.pathSeparator + "Success");
-        Files.createDirectories(successPath);
-        Files.move(path, successPath);
+    public void successMoveFile(File file) {
+        var successPath = new File(statusFolder.getAbsolutePath() + File.separatorChar + "Send"
+                + File.separatorChar + "Success" + File.separatorChar + file.getName());
+        successPath.getParentFile().mkdirs();
+        file.renameTo(successPath);
     }
 
-    public void sendErrorMoveFile(String pathStr) throws IOException {
-        var path = Paths.get(pathStr);
-        var errorPath = Paths.get(registrySendFolder.getAbsolutePath() + File.pathSeparator + "SendError");
-        Files.createDirectories(errorPath);
-        Files.move(path, errorPath);
+    public void sendErrorMoveFile(File file) {
+        var errorPath = new File(registrySendFolder.getAbsolutePath() + File.separatorChar + "SendError"
+                + File.separatorChar + file.getName());
+        errorPath.getParentFile().mkdirs();
+        file.renameTo(errorPath);
     }
 
 
-    public void errorMoveFile(String pathStr) throws IOException {
-        var path = Paths.get(pathStr);
-        var errorPath = Paths.get(registrySendFolder.getAbsolutePath() + File.pathSeparator + "Send" + File.pathSeparator + "Error");
-        Files.createDirectories(errorPath);
-        Files.move(path, errorPath);
+    public void errorMoveFile(File file) {
+        var errorPath = new File(registrySendFolder.getAbsolutePath() + File.separatorChar + "Send" + File.separatorChar + "Error"
+                + File.separatorChar + file.getName());
+        errorPath.getParentFile().mkdirs();
+        file.renameTo(errorPath);
     }
 
-    public File[] getClientRegistryFiles() throws IOException {
+    public File[] getClientRegistryFiles() {
         //check if file has suitable name
         return registrySendFolder.listFiles((file, s) -> s.matches("^[A-Za-z]{3}\\d{4}\\.dbf$"));
     }

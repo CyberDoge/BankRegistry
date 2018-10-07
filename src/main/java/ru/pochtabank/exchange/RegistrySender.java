@@ -24,11 +24,11 @@ public class RegistrySender {
         hostUri = URI.create(host);
     }
 
-    public ResponseEntity<String> sendRegistryToBank(String registryPath) {
+    public ResponseEntity<String> sendRegistryToBank(String registry) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
         MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
-        body.add("file", new FileSystemResource(registryPath));
+        body.add("file", registry);
         var requestEntity = new HttpEntity<>(body, headers);
         //todo uuid
         return restTemplate.postForEntity(hostUri + "/client-to-bank", requestEntity, String.class);

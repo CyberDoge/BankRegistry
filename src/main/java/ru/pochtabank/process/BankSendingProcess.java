@@ -26,17 +26,15 @@ public class BankSendingProcess {
         for (File file : files) {
             var clientRegistries = DocumentParser.parseDbfFile(file);
             var bankRegistries = ModelConverter.convertFromClientToBank(clientRegistries);
-            var bankRegistryPaths = DocumentParser.saveBankRegister(bankRegistries,
-                    new File(fileService.getRegistrySendFolder().getAbsolutePath() + "/bank"));
-            bankRegistryPaths.forEach(registry -> { var responseEntity = registrySender.sendRegistryToBank(registry);
-                try {
-                    if (responseEntity.getStatusCode().value() == 200) {
-                        fileService.successMoveFile(registry);
-                    } else fileService.errorMoveFile(registry);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
+            var bankRegistryLines = DocumentParser.saveBankRegister(bankRegistries);
+            var responseEntity = registrySender.sendRegistryToBank(bankRegistryLines);
+            try {
+                if (responseEntity.getStatusCode().value() == 200) {
+                    fileService.successMoveFile(file);
+                } else fileService.errorMoveFile(file);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7f6221d-840e-4800-8f8e-aa9800fffc37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mail.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/ProjectConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/exchange/RegistrySender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/model/BankRegistry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/model/ClientRegistry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/process/BankSendingProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/service/DocumentParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/service/FileService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru.pochtabank/service/ModelConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/MailConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/MailConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pochtabank/process/BankSendingProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pochtabank/process/BankSendingProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/DocumentParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/DocumentParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mail.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mail.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,15 +28,18 @@
     <session id="-1464904148">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.103" value="1" />
           <entry key="project.open.time.104" value="1" />
+          <entry key="project.open.time.127" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.86" value="1" />
+          <entry key="project.open.time.89" value="1" />
           <entry key="project.open.time.93" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -51,37 +47,37 @@
           <entry key="class" value="1" />
           <entry key="dummy" value="55" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="9425" />
-          <entry key="properties" value="455" />
-          <entry key="xml" value="50" />
+          <entry key="java" value="9775" />
+          <entry key="properties" value="456" />
+          <entry key="xml" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Git file" value="1" />
-          <entry key="JAVA" value="9425" />
+          <entry key="JAVA" value="9775" />
           <entry key="PLAIN_TEXT" value="55" />
-          <entry key="Properties" value="455" />
-          <entry key="XML" value="50" />
+          <entry key="Properties" value="456" />
+          <entry key="XML" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="29" />
           <entry key="gitignore" value="2" />
-          <entry key="java" value="82" />
-          <entry key="properties" value="9" />
-          <entry key="xml" value="8" />
+          <entry key="java" value="95" />
+          <entry key="properties" value="10" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="29" />
           <entry key="Git file" value="2" />
-          <entry key="JAVA" value="82" />
-          <entry key="Properties" value="9" />
-          <entry key="XML" value="8" />
+          <entry key="JAVA" value="95" />
+          <entry key="Properties" value="10" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -95,56 +91,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/ProjectConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/process/BankSendingProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-              <folding>
-                <element signature="e#700#718#1" expanded="true" />
-                <element signature="e#754#771#1" expanded="true" />
-                <element signature="e#810#832#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="163">
+              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -152,35 +112,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/EmailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="41">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/net/URI.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="880" selection-start-line="880" selection-end-line="880" />
+            <state relative-caret-position="1196">
+              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/util/DefaultUriBuilderFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/MailConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="390" selection-start-line="390" selection-end-line="390" />
+            <state relative-caret-position="138">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12282">
+              <caret line="589" selection-start-line="589" selection-end-line="589" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mail.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -204,6 +179,7 @@
       <find>match</find>
       <find>public</find>
       <find>Float</find>
+      <find>pathSeparator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,19 +205,21 @@
         <option value="$PROJECT_DIR$/src/main/java/ru.pochtabank/process/BankSendingProcess.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/MainConfiguration.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/MailConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru.pochtabank/service/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/ProjectConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru.pochtabank/service/FileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru.pochtabank/exchange/RegistrySender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mail.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/MailConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/ProjectConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/process/BankSendingProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/DocumentParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/MailConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mail.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java" />
       </list>
     </option>
   </component>
@@ -293,6 +271,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,17 +352,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/main/resources/mail.properties" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mock_server/server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -498,7 +476,10 @@
       <workItem from="1538668459256" duration="7254000" />
       <workItem from="1538687632366" duration="443000" />
       <workItem from="1538715135293" duration="5066000" />
-      <workItem from="1538745115125" duration="6435000" />
+      <workItem from="1538745115125" duration="8892000" />
+      <workItem from="1538832707760" duration="1193000" />
+      <workItem from="1538834353919" duration="6319000" />
+      <workItem from="1538907588327" duration="1579000" />
     </task>
     <servers />
   </component>
@@ -535,7 +516,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75239000" />
+    <option name="totallyTimeSpent" value="86787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,10 +529,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4988399" visible="true" weight="0.1590909" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4988399" visible="true" weight="0.1659091" />
       <window_info id="Favorites" order="3" sideWeight="0.5011601" side_tool="true" weight="0.19166666" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
@@ -565,7 +547,7 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32970452" />
-      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.44634527" />
+      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.525661" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32970452" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -615,84 +597,28 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/pochtabank/process/BankSendingProcess.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java</url>
+          <line>50</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java</url>
+          <line>52</line>
           <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/nio/file/Paths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar!/org/springframework/core/io/AbstractResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar!/org/springframework/core/io/FileSystemResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="80" column="29" lean-forward="true" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/jdk/internal/misc/JavaIOFileDescriptorAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/io/FileDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1496">
-          <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-559">
-          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jamel/dbf/dbf-reader/0.3.0/dbf-reader-0.3.0.jar!/org/jamel/dbf/processor/DbfRowMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/model/BankRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/model/BankRegistry.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -819,126 +745,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/DocumentParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/ModelConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="100" selection-start-line="9" selection-start-column="100" selection-end-line="9" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/exchange/RegistrySender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/ProjectConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/MailConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/process/BankSendingProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mail.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="731" selection-start-line="731" selection-end-line="731" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/MailConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="7" selection-start-line="15" selection-start-column="4" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/Application.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/DocumentParser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/EmailService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/ModelConverter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/service/FileService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/exchange/RegistrySender.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/ProjectConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/conf/MailConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru.pochtabank/process/BankSendingProcess.java" />
     <entry file="jrt:///usr/lib/jvm/jdk-11!/java.base/java/lang/invoke/DirectMethodHandle$Holder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -950,67 +765,159 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="309" selection-start-line="309" selection-end-line="309" />
-          <folding>
-            <element signature="e#14572#14573#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/util/DefaultUriBuilderFactory.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE-sources.jar!/org/springframework/util/MultiValueMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="390" selection-start-line="390" selection-end-line="390" />
+        <state relative-caret-position="129">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/net/URI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="880" selection-start-line="880" selection-end-line="880" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding>
-            <element signature="e#700#718#1" expanded="true" />
-            <element signature="e#754#771#1" expanded="true" />
-            <element signature="e#810#832#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/process/BankSendingProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="207">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/ProjectConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="299">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/net/URI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19320">
+          <caret line="880" selection-start-line="880" selection-end-line="880" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/model/ClientRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/DocumentParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/util/DefaultUriBuilderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="390" selection-start-line="390" selection-end-line="390" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/process/BankSendingProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/conf/MailConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12282">
+          <caret line="589" selection-start-line="589" selection-end-line="589" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mail.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/exchange/RegistrySender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="85">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/io/FileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/nio/file/CopyOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="1396" column="19" selection-start-line="1396" selection-start-column="19" selection-end-line="1396" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11/lib/src.zip!/java.base/java/nio/file/StandardCopyOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/pochtabank/service/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
         </state>
       </provider>
     </entry>
